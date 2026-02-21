@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\LibraryNuspecProperties.props" />
   <PropertyGroup>
-    <PackageId>Microsoft.VisualStudio.Threading</PackageId>
+    <PackageId>Speed.VisualStudio.Threading</PackageId>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <IncludeSymbols>false</IncludeSymbols>
     <NoWarn>$(NoWarn);NU5128</NoWarn>

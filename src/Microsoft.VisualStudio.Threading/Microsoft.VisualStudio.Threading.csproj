@@ -1,15 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\LibraryNuspecProperties.props" />
   <PropertyGroup>
-    <PackageId>Microsoft.VisualStudio.Threading.Only</PackageId>
+    <PackageId>Speed.VisualStudio.Threading.Only</PackageId>
     <Description>$(Description)
       This package contains only the library, without a dependency on the analyzers.
       Use the Microsoft.VisualStudio.Threading package to get the library and analyzers together.
     </Description>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-  </PropertyGroup>
-  <PropertyGroup Condition="$([MSBuild]::IsOSPlatform('Windows'))">
-    <UseWPF Condition=" '$(TargetFramework)' != 'net8.0' ">true</UseWPF>
   </PropertyGroup>
   <ItemGroup>
     <CodeAnalysisDictionary Include="CustomDictionary.xml" />
